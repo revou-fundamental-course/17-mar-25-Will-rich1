@@ -1,1 +1,59 @@
 /* ini css */
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main-header {
+  background-color: aquamarine;
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+}
+
+main {
+  background-color: azure;
+  padding: 16px;
+  text-align: center;
+}
+
+.nav-fitur {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-fitur > a {
+  background-color: aliceblue;
+  color: black;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 50%;
+  align-self: center;
+}
+
+.nav-fitur-active {
+  background-color: darkcyan;
+}
+
+.nav-fitur-nonactive {
+  background-color: cornflowerblue;
+}
+
+.section-header {
+  background-color: aquamarine;
+  padding: 16px;
+}
+.section-image {
+  background-color: black;
+  background-image: url(/assets/persegi.jpg);
+  width: 300px;
+  height: 100px;
+  justify-self: center;
+}
+
+.calculate-content {
+}
+
+section {
+  margin-top: 16px;
+}
