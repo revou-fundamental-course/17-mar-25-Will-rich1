@@ -86,7 +86,26 @@ section{
   font-size: 16px;
 }
 
-.section-calculate > #button-calculate{
+.section-calculate >#button-calculate{
+  display: block;
+  justify-self: center;
+  border:none;
+  background-color: rgb(96, 96, 227);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.section-calculate > #button-calculate:hover{
+  background-color: blue;
+  color: white;
+}
+
+.section-calculate > #button-reset{
   display: block;
   margin-left: auto;
   justify-self: flex-end;
@@ -96,7 +115,6 @@ section{
   border-radius: 5px;
   cursor: pointer;
   font-size: 15px;
-  margin-top:5px;
   font-weight: bold;
   transition-duration: 0.4s;
 }
