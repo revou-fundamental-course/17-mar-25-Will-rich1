@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kattik - William</title>
-
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header class="main-header">
-      <h1>Katik (Kalkulator matermatika)</h1>
+      <h1>Katik (Kalkulator Matematika)</h1>
     </header>
 
     <main>
@@ -18,44 +17,104 @@
       </header>
 
       <p>Halo selamat datang</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto sed
-        officiis laudantium laborum aspernatur sint eum explicabo! Nam
-        doloremque odit voluptas!
-      </p>
+      <p>Selamat menggunakan Katik ya</p>
 
-      <!-- navigasi fitur -->
+      <!-- Navigasi Fitur -->
       <div class="nav-fitur">
-        <a href="" class="nav-fitur-active">Persegi</a>
-        <a href="" class="nav-fitur-nonactive">Persegi Panjang</a>
+        <a href="#" id="nav-persegi" class="nav-fitur-active">Persegi</a>
+        <a href="#" id="nav-persegi-panjang" class="nav-fitur-nonactive"
+          >Persegi Panjang</a
+        >
       </div>
 
-      <section>
+      <!-- Section Persegi -->
+      <section id="section-persegi">
         <header class="section-header">
-          <h1>Luas Persegi</h1>
+          <h1>Luas dan Keliling Persegi</h1>
         </header>
 
         <div class="section-image">
-          <img src="assets/persegii.jpg" alt="Persegi" />
+          <img src="assets/persegi.png" alt="Persegi" />
         </div>
 
-        <div class="section-calculate">
-          <p>Rumus Luas Persegi</p>
-          <p id="center"><b>L = S X S</b></p>
-          <p>Dimana :</p>
-          <p>L = Luas</p>
-          <p>S = Sisi</p>
-          <hr />
-          <h1 id="center">Hitung Keliling Persgi</h1>
-          <input type="number" id="input-sisi" placeholder="Sisi" />
-          <button id="button-calculate">Hitung</button>
-          <button id="button-reset">Reset</button>
+        <div class="calculate-content">
+          <h3>Hitung Luas Persegi</h3>
+          <input
+            type="number"
+            id="input-sisi-luas"
+            placeholder="Masukkan Sisi"
+          />
+          <button id="button-calculate-luas">Hitung</button>
+          <button id="button-reset-luas" class="reset-button">Reset</button>
+          <p>Hasil: <span id="hasil-luas"></span></p>
+          <p>Rumus: <span id="rumus-luas"></span></p>
+
+          <h3>Hitung Keliling Persegi</h3>
+          <input
+            type="number"
+            id="input-sisi-keliling"
+            placeholder="Masukkan Sisi"
+          />
+          <button id="button-calculate-keliling">Hitung</button>
+          <button id="button-reset-keliling" class="reset-button">Reset</button>
+          <p>Hasil: <span id="hasil-keliling"></span></p>
+          <p>Rumus: <span id="rumus-keliling"></span></p>
         </div>
       </section>
 
+      <!-- Section Persegi Panjang -->
+      <section id="section-persegi-panjang">
+        <header class="section-header">
+          <h1>Luas dan Keliling Persegi Panjang</h1>
+        </header>
 
+        <div class="section-image">
+          <img src="assets/persegipanjang.png" alt="Persegi Panjang" />
+        </div>
+
+        <div class="calculate-content">
+          <h3>Hitung Luas Persegi Panjang</h3>
+          <input
+            type="number"
+            id="input-panjang-luas"
+            placeholder="Masukkan Panjang"
+          />
+          <input
+            type="number"
+            id="input-lebar-luas"
+            placeholder="Masukkan Lebar"
+          />
+          <button id="button-calculate-luas-pp">Hitung</button>
+          <button id="button-reset-luas-pp" class="reset-button">Reset</button>
+          <p>Hasil: <span id="hasil-luas-pp"></span></p>
+          <p>Rumus: <span id="rumus-luas-pp"></span></p>
+
+          <h3>Hitung Keliling Persegi Panjang</h3>
+          <input
+            type="number"
+            id="input-panjang-keliling"
+            placeholder="Masukkan Panjang"
+          />
+          <input
+            type="number"
+            id="input-lebar-keliling"
+            placeholder="Masukkan Lebar"
+          />
+          <button id="button-calculate-keliling-pp">Hitung</button>
+          <button id="button-reset-keliling-pp" class="reset-button">
+            Reset
+          </button>
+          <p>Hasil: <span id="hasil-keliling-pp"></span></p>
+          <p>Rumus: <span id="rumus-keliling-pp"></span></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
     <footer>
       <p>Dibuat oleh William Richnady@2025</p>
     </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

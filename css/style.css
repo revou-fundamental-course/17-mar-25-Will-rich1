@@ -1,5 +1,3 @@
-/* ini css */
-
 body {
   font-family: "Courier New", Courier, monospace;
 }
@@ -8,122 +6,204 @@ body {
   display: flex;
   justify-content: center;
   background-color: aquamarine;
-  margin: 0;
-  padding: 24px;
+  padding: 20px;
   border-radius: 5px;
-  gap: 10px;
-  text-align: center;
-}
-
-.main-header > h1,
-.main-header > p {
-  margin: 0;
-  text-align: center;
 }
 
 main {
   background-color: azure;
   padding: 16px;
-  margin-top: 10px;
   text-align: center;
 }
 
+/* Navigasi */
 .nav-fitur {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.nav-fitur > a {
+.nav-fitur a {
   background-color: rgb(165, 211, 252);
   color: black;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin: 5px;
-  width: 50%;
-  align-self: center;
-  transition-duration: 0.4s;
-  font-weight: bold;
+  padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.nav-fitur-active:hover,
-.nav-fitur-nonactive:hover {
+.nav-fitur a:hover {
   background-color: cornflowerblue;
-  color: black;
+}
+.section-image img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
-.section-header {
-  background-color: aquamarine;
-  color:black
-  padding: 16px;
-}
-
-.section-calculate{
-  text-align: left;
-  padding:24px;
-}
-
-.section-calculate > #center{
+.gambar-container {
   text-align: center;
+  margin: 20px 0;
 }
 
-section{
-  border: 1px solid rgb(2, 50, 91);
-  margin:24px auto;
+.gambar-container img {
+  width: 200px;
+  height: auto;
+
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Bagian Perhitungan */
+.calculate-content {
+  padding: 20px;
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px auto;
   width: 50%;
 }
 
-.section-image > img{
-  justify-self: center;
-  width: 40%;
-}
-
-.section-calculate > #input-sisi{
-  width: 100%;
-  height: 25px;
+.calculate-content input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
   border-radius: 5px;
   font-size: 16px;
 }
 
-.section-calculate >#button-calculate{
+.calculate-content button {
   display: block;
-  justify-self: center;
-  border:none;
-  background-color: rgb(96, 96, 227);
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 5px;
+  width: 95%;
   padding: 10px;
-  margin-top: 5px;
+  margin: 5px auto;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset-button {
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
   font-weight: bold;
   transition-duration: 0.4s;
 }
 
-.section-calculate > #button-calculate:hover{
+.reset-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.nav-fitur a {
+  cursor: pointer;
+}
+
+.calculate-content button:hover {
   background-color: blue;
   color: white;
 }
 
-.section-calculate > #button-reset{
-  display: block;
-  margin-left: auto;
-  justify-self: flex-end;
-  background-color: orange;
-  border: none;
-  padding:10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: bold;
-  transition-duration: 0.4s;
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: aquamarine;
+  font-size: 14px;
 }
 
-.section-calculate > #button-reset:hover{
-  background-color: #ff0000;
+/* sembunyikan persegi panjang di awal */
+#section-persegi-panjang {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    width: 90%;
+  }
+
+  .section-image img {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 {
+    text-align: center;
+  }
+
+  .nav-fitur {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-fitur a {
+    width: 45%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .section-image img {
+    width: 80%;
+  }
+
+  section {
+    width: 90%;
+    margin: 16px auto;
+  }
+}
+
+/* Mengatur ukuran gambar agar persegi tidak terlalu besar */
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Memberikan margin antar section luas dan keliling */
+.section-calculate {
+  margin-bottom: 20px;
+}
+
+/* Styling tombol reset agar berbeda */
+#button-reset-luas,
+#button-reset-keliling,
+#button-reset-luas-pp,
+#button-reset-keliling-pp {
+  background-color: red;
   color: white;
 }
 
-footer{
+#button-reset-luas:hover,
+#button-reset-keliling:hover,
+#button-reset-luas-pp:hover,
+#button-reset-keliling-pp:hover {
+  background-color: darkred;
+}
+
+/* Memperbaiki navbar agar lebih kecil dan rata tengah */
+.nav-fitur {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-fitur a {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
   text-align: center;
 }
