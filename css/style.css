@@ -177,7 +177,6 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Styling tombol reset agar berbeda */
 #button-reset-luas,
 #button-reset-keliling,
 #button-reset-luas-pp,
@@ -193,7 +192,6 @@ footer {
   background-color: darkred;
 }
 
-/* Memperbaiki navbar agar lebih kecil dan rata tengah */
 .nav-fitur {
   display: flex;
   justify-content: center;
